@@ -212,7 +212,7 @@ void LinkedList::writeToFileFromTail(){
 }
 
 void LinkedList::insert(int nameNode, int position){
-  if(position <= 0 || position > Node::countNodes + 1)
+  if(position <= 0 && position > Node::countNodes + 1)
     return;
   Node* node = new Node;
   node->nameNode = nameNode;
