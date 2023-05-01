@@ -20,6 +20,8 @@ private :
     void prepareTestFile(const char* fileName);
 
 public :
+    WorkWithFile(){}
+
     WorkWithFile(const char* fileName);
 
     ~WorkWithFile();
